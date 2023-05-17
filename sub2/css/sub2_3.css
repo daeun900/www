@@ -1,0 +1,34 @@
+
+.intro{overflow: hidden;width:1600px; position:relative; left:50%; margin-left: -800px;}
+.intro .terminal_img{width:660px; height:425px; float:left; overflow:hidden;opacity: 0;margin-left: 100px;}
+.intro .terminal_img.active{animation:left-right .5s ease-out forwards}
+.intro .terminal_img img{ transition:all .7s ease;}
+.intro .terminalr_img:hover img{transform: scale(1.1);}
+.intro .terminal_text {float:right; width:650px;  margin-right:100px;opacity: 0;}
+.intro .terminal_text.active{animation:right-left .5s ease-out forwards}
+.intro .terminal_text dt{font-size:30px; font-weight: 500; margin:20px 0 30px 0;position:relative;color:#ee312f;}
+.intro .terminal_text dt::after{content:''; display: block;background-color:#ee312f; width:70px; height:2px; position: absolute; left:0; bottom:-10px;}
+.intro .terminal_text dd{font-size:18px; line-height: 36px; text-align: justify; margin-top:20px;}
+
+@keyframes left-right{from{transform: translateX(-70px); opacity: 0;}to{transform: translateX(0); opacity:1;}}
+@keyframes right-left{from{transform: translateX(70px); opacity: 0;}to{transform: translateX(0); opacity:1;}}
+
+.terminal_search{margin-top:100px;}
+.terminal_search h2{font-size: 30px;font-weight: 500; text-align: center;}
+.terminal_search .search_box{position: relative; text-align: center; margin-top:50px;}
+.terminal_search .search_box input{width:600px; height:50px; outline:none; text-indent:20px; vertical-align: top; border:2px solid #005793; box-sizing: border-box; font-size:18px;}
+.terminal_search .search_box #btn2{height:50px; width:50px; padding:10px; vertical-align: top; position: absolute; top:0; right:300px; background: #005793; color:white; border:none; cursor: pointer;}
+.terminal_search .search_box .btn_all{height:50px; width:50px; padding:10px; vertical-align: top; position: absolute; top:0; right:250px; background: #005793; color:white; border:none; cursor: pointer;}
+.terminal_search dl{overflow: hidden; color:#005793; width:800px; margin:0 0 50px 350px;}
+.terminal_search dl dt{float: left; padding:10px 50px 10px 0; font-size: 1.2em; font-weight: 600px;}
+.terminal_search dl dd a{float: left; padding:10px 15px; }
+.terminal_search dl dd a:hover{color:#005793}
+
+.terminal_list ul{border:1px solid #005793;}
+.terminal_list ul li{overflow: hidden; padding:50px 0; transition: all .3s ease;}
+.terminal_list ul li:nth-child(odd){background-color:rgba(235, 243, 254, 0.5)}
+.terminal_list ul  li:nth-child(odd):hover{background-color:rgba(235, 243, 254, 1)}
+
+.terminal_list ul li dt{float:left; font-size:20px; font-weight: 500; color:#005793; width:500px; text-align: center; padding:20px 0; border-right: 1px solid #005793;}
+.terminal_list ul li dd{padding:5px 0 5px 550px;}
+.terminal_list ul li dd b{font-weight: 500;}

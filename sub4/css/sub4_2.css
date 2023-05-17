@@ -1,0 +1,9 @@
+
+.container{display: flex; flex-direction: row; flex-wrap: wrap; margin-bottom:100px;}
+.container dl{position:relative; width:400px; height:180px; margin-bottom:70px;}
+.container dt{font-size:20px; font-weight:600; color:#005793; padding: 40px 0 15px 220px;}
+.container dd{line-height: 2em;}
+.container dd:first-of-type{padding-left:220px;}
+.container dd:last-of-type{width: 180px; height:180px; background-color:#ebf0f2; border-radius: 50%; position:absolute;top:0; left:20px;}
+.container dd img{margin:45px;}
+.container dl:hover dd:last-of-type{ box-shadow: 2px 4px 5px 1px rgb(0 0 0 / 20%);}

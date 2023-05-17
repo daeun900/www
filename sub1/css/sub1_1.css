@@ -1,0 +1,47 @@
+/* 회사소개 내용 영역 */
+#content .content_area dt{font-size: 24px; font-weight:500;}
+#content .content_area dt span{font-size:36px; color:#ee312f;}
+#content .content_area dd{font-size:18px; line-height: 36px; }
+
+#content .content_area{width:1200px; margin:0 auto}
+#content .content_area .con1,.con2{ width: 2000px; position:relative; left:50%; margin-left: -1000px; margin-bottom: 170px;; top:0; overflow: hidden; opacity: 0;}
+#content .content_area .con1.active{animation:left-right 1s ease-out forwards}
+#content .content_area .con2.active{animation:right-left 1s 1s ease-out forwards}
+@keyframes left-right{from{transform: translateX(-100px); opacity: 0;}to{transform: translateX(0); opacity:1;}}
+@keyframes right-left{from{transform: translateX(100px); opacity: 0;}to{transform: translateX(0); opacity:1;}}
+
+
+#content .content_area .con1 dl{float:right; width:600px; margin-top: 70px; text-align: justify;}
+#content .content_area .con1 dt, .con2 dt{ margin-bottom:60px; position:relative;}
+#content .content_area .con1 dt::after, .con2 dt::after{content: ''; width:74px; height:2px; background-color: #005793; position:absolute; bottom:-30px; left:0; }
+#content .content_area .con1 dd, .con2 dd{width:500px; text-align: justify;}
+#content .content_area .con1 .img_box{width:900px; height:455px; float:right; overflow: hidden;}
+#content .content_area .img_box img{transition:all .5s ease;}
+#content .content_area .img_box img:hover{transform: scale(1.05);}
+
+
+#content .content_area .con2 dl{float:left; width:600px; margin:70px 0 0 130px ;}
+#content .content_area .con2 .img_box{float:left;width:900px; height:455px;  overflow: hidden;}
+
+#content .content_area .con3{ height:620px; position: relative;}
+#content .content_area .con3::before{content:''; width:2000px; height:620px; position:absolute; top:0; left:50%; margin-left:-1000px; z-index:-50; background-image: url(../images/content1/con3_background.jpg); }
+#content .content_area .con3 dt{padding:90px 0 30px 0; position:relative;}
+#content .content_area .con3 ul{width:1200px; height:100%; position: relative;}
+
+#content .content_area .con3 ul li.active:first-child{animation:moveDown .5s forwards}
+#content .content_area .con3 ul li.active:nth-child(2){animation:moveDown .5s .5s forwards}
+#content .content_area .con3 ul li.active:nth-child(3){animation:moveDown .5s 1s forwards}
+#content .content_area .con3 ul li.active:last-child{animation:moveDown .5s 1.5s forwards}
+@keyframes moveDown{from{opacity:0; top:0;}to{opacity: 1; top:60px}}
+#content .content_area .con3 ul li{width:250px; height: 250px;text-align: center;  margin-right:40px; border-radius: 50%; background:rgba(255,255,255,.5);box-shadow:2px 2px 18px 6px rgba(0,0,0,.1); position:relative; top:60px; float:left; transition:all .5s; opacity: 0;}
+#content .content_area .con3 ul li:first-child{margin-left:40px;}
+#content .content_area .con3 ul li:hover{position:relative; top:40px; background:white;}
+#content .content_area .con3 ul li i {font-size: 100px; color:#005793; margin-top: 50px;}
+#content .content_area .con3 ul li p{font-size:18px; margin-top:20px;}
+
+#content .content_area .con4 dl {position:relative;  height:400px;}
+#content .content_area .con4 dt{text-align: center; margin:150px 0 0 0;}
+#content .content_area .con4 dd {width:370px;  height:245px; background-image: url(../images/content1/con4_logo.jpg);  position:absolute; top:100px; left:400px; transition:all .5s ease; bottom: 0; opacity: 0;;}
+#content .content_area .con4 dd.active{bottom:0; opacity:1; animation: moveUp .5s .5s forwards;}
+@keyframes moveUp{from{top:100px;}to{ top:80px}}
+

@@ -1,0 +1,33 @@
+#headerArea .header{position: fixed; top:0; z-index:30; width:100%; overflow: hidden; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,.1);}
+#headerArea .header h1 a{display: block; width:80px;height:35px; margin: 10px 15px 5px 15px;background: url(../images/logo.png) center no-repeat;background-size:cover; text-indent: -1000px; overflow: 'hidden'; float: left;;}
+#headerArea .header .menu{display:block; font-size:24px; color:#333; padding:15px; float: right;}
+
+.main{background: url(../images/sub4visual.jpg) 20% no-repeat; height:220px; background-size: cover; position: relative;} 
+.main h3{font-size: 1.7em; font-weight: 500; color:#fff; position: absolute; left:50%; top:50%; margin-left: -44px; margin-top: 10px; }
+
+.subNav{position:relative; left:0; top:-20px; }
+.subNav ul{width:90%; margin: 0 auto; overflow: hidden; border-radius: 10px; box-shadow: 2px 1px 8px 0px rgba(0,0,0,.1);}
+.subNav ul li{width:50%; float: left; text-align: center; background: #fff;}
+.subNav ul li a{border: 1px solid #f8f8f8; display: block; padding:13px 0;    font-family:'Noto Sans KR', sans-serif}
+.subNav ul li a.current{color:#fff; background: #0c205b; font-weight: 500; border:1px solid #0c205b;}
+
+/* 내용 영역 */
+.title_area h2{font-size:1.5em; font-weight: 600; margin:30px 0 20px 0  ;text-align: center;}
+.title_area p{font-size: 1.2em; font-weight: 500; text-align: center; margin-bottom: 30px;}
+.title_area p span{color: #005793; font-weight: 600;}
+
+.content_area{position: relative;}
+.content_area .all{color: #005793;font-weight: 600 ;position: absolute; top:-35px; right:5%;}
+.content_area .all span i{color:#005793;;padding-left:5px;}
+
+.content_area ul{width:90%; margin:50px 5%; display: block;}
+
+.content_area ul li .plus{display: block; position:absolute; right:15px; top:50%; margin-top: -10px; color:#333; font-size: 1rem;}
+
+.content_area ul li .q {background-color: #f5f5f5; border-radius: 30px;margin-top:20px;position: relative;}
+.content_area ul li .q a{font-size:1.2em; font-weight: 500; display: block; padding:15px 50px 15px 70px; margin-bottom:20px;}
+.content_area ul li .q a::before{content:"Q"; color:#005793;display: block; position: absolute; top:15px; left:30px; font-size: 1.3em; font-weight: 600;}
+
+
+.content_area ul li .a{overflow: hidden; padding:25px 70px;border-radius: 30px ;background-color: aliceblue;  text-align: justify; line-height: 2em; position: relative;}
+.content_area ul li .a::before{content: "A"; color:#1f415c; display: block; position:absolute; left:30px; font-size: 1.3em; font-weight: 600;}

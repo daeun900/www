@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기업소개-오시는길</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_4.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="https://kit.fontawesome.com/ebace215db.js" crossorigin="anonymous"></script>
+    <script  src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0372eea63d53ea2e72ae93b800721305"></script>
+    <script  src="./js/sub1_4.js"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+       <div class="visual">
+            <img src="./common/images/visual.jpg" alt="서브 비주얼 이미지 - 기업소개">
+            <h3>기업소개</h3>
+            <p>Company Introduction</p>
+        </div>
+        <div class="sub_nav">
+            <ul>
+                <li ><a href="./sub1_1.html" >기업개요</a></li>
+                <li><a href="./sub1_2.html" >CEO 인사말</a></li>
+                <li><a href="./sub1_3.html" >주요연혁</a></li>
+                <li><a href="./sub1_4.html" class="current">오시는 길</a></li>
+            </ul>
+        </div>
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">  
+                    home &gt; 회사소개 &gt; <strong>오시는길</strong>
+                </div>
+                <h2>오시는 길</h2>
+                <p><span> HMM 본사</span> <br>
+                  </p>
+
+            </div>
+            <div class="content_area">
+                <div class="map">
+                    <div id="hmm_company"></div>
+                       
+                    </div>
+                <div class="explain">
+                    <ul>
+                        <li class="adress">
+                            <dl>
+                                <dt><i class="fa-solid fa-building"></i>주소 및 연락처</dt>
+                                <dd><span>주소</span> 서울특별시 영등포구 여의대로 108 파크원 타워1 </dd>
+                                <dd> <span>우편번호</span> 07335 <span class="tel">Tel.</span>02-3706-5114</dd>
+                            </dl>
+                        </li>
+                        <li class="subway">
+                            <dl>
+                                <dt><i class="fa-solid fa-train-subway"></i> 지하철 이용 시</dt>
+                                <dd><span>5</span>5호선 여의나루역 하차 후 1번 출구에서 도보 10분</dd>
+                            </dl>
+                        </li>
+                        <li class="bus">
+                            <dl>
+                                <dt> <i class="fa-solid fa-bus"></i> 버스 이용 시</dt>
+                                <dd>더현대서울 정류장 하차 후 도보 3분</dd>
+                                <dd> <span class="bus1">간선</span> 360, 662</dd>
+                                <dd> <span class="bus2" >지선</span> 5012, 6623, 6628</dd>
+                                <dd> <span class="bus3">일반</span> 88</dd>
+                            </dl>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="company_img">
+                    <img src="./images/content4/company_img.png" alt="HMM 본사 사진">
+                </div>
+            </div>
+
+        </article>
+        <? include "../common/sub_footer.html" ?>
+        <script src="./js/sub1_4.js"></script>
+</body>
+</html>

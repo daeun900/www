@@ -1,0 +1,5 @@
+table { text-align:center; font-size:14px; border-collapse: collapse;}
+td,th{border:1px solid #ccc; padding: 14px;}
+table thead tr:first-of-type{background-color: #dedede;}
+table thead tr:last-of-type{background-color: #ececec;}
+table tbody tr th{background-color: #ececec;}

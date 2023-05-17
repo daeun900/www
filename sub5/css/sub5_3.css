@@ -1,0 +1,10 @@
+ 
+table{border-collapse: collapse; border-spacing: 0; width:100%; margin-bottom: 150px;}
+caption{font-size: 2em; font-weight: 500 ;padding-bottom: 50px;}
+ th,td{padding:20px; border-right: 1px solid #ccc;border-bottom:   1px solid #ccc}
+ th b{color:#000; font-weight: 500;}
+ td{text-align: center; position: relative;}
+ td a{width: 80px; padding:5px 10px; border:1px solid #ccc; border-radius: 20px; position: absolute;top: 15px;left:80px; transition: all .3s ease;}
+ td a:hover{background-color: #005793; color:#fff;}
+ table tr:first-of-type th{background-color: #005793; color:#fff; text-align: center;}
+ table td:last-child{border-right: 0;}

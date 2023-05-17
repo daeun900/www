@@ -1,0 +1,37 @@
+#headerArea .header{position: fixed; top:0; z-index:30; width:100%; overflow: hidden; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,.1);}
+#headerArea .header h1 a{display: block; width:80px;height:35px; margin: 10px 15px 5px 15px;background: url(../images/logo.png) center no-repeat;background-size:cover; text-indent: -1000px; overflow: 'hidden'; float: left;;}
+#headerArea .header .menu{display:block; font-size:24px; color:#333; padding:15px; float: right;}
+
+.main{background: url(../images/sub1visual.jpg) 40% no-repeat; height:220px; background-size: cover; position: relative;} 
+.main h3{font-size: 1.7em; font-weight: 500; color:#fff; position: absolute; left:50%; top:50%; margin-left: -44px; margin-top: 10px; }
+
+.subNav{position:relative; left:0; top:-20px; }
+.subNav ul{width:90%; margin: 0 auto; overflow: hidden; border-radius: 10px; box-shadow: 2px 1px 8px 0px rgba(0,0,0,.1);}
+.subNav ul li{width:33.3%; float: left; text-align: center; background: #fff;}
+.subNav ul li a{border: 1px solid #f8f8f8; display: block; padding:13px 0;}
+.subNav ul li a.current{color:#fff; background: #0c205b; font-weight: 500; border:1px solid #0c205b;}
+
+/* 회사소개 내용 영역 */
+.title_area h2{font-size:1.5em; font-weight: 600; margin:30px 0 20px 0  ;text-align: center;}
+.title_area p{font-size: 1.2em; font-weight: 500; text-align: center; margin-bottom: 30px;}
+.title_area p span{color: #005793; font-weight: 600;}
+
+.content_area .con1 img,.con2 img{width:90%; margin-left: 5%;}
+.content_area dl{padding:20px 5%}
+.content_area dl dt{font-size: 1.1em; font-weight: 400; margin-bottom: 20px;font-weight: 500; position: relative;}
+.content_area dl dt span{color:#ee312f; }
+.content_area .con1 dt::after,.content_area .con2 dt::after{content: ''; width:60px; height:2px; background-color: #ee312f; position:absolute; bottom:-10px; left:0; }
+.content_area dl dd{line-height: 1.7em; text-align: justify; text-indent: 5px;}
+.content_area .con1 dl dd{ margin-bottom: 20px;}
+
+.content_area .con3 ul{width:90%; margin-left: 5%; margin-bottom: 20px ;display: flex; justify-content: center; flex-wrap: wrap;}
+.content_area .con3 ul li{width:130px; height:130px;margin: 5% ;background-color:#0c205b;color: white ; border-radius: 50% ;position: relative;}
+.content_area .con3 ul li i{position: absolute; top:30px; left:25px; font-size: 5em;}
+.content_area .con3 ul li:nth-child(2) i,.content_area .con3 ul li:nth-child(3) i{left:30px}
+.content_area .con3 ul li p{margin-top: 135px; width:150px; color:#0c205b; font-weight: 500;}
+
+
+.content_area .con4{position: relative;}
+.content_area .con4 img{position: absolute; bottom:100px; left:50%;margin-left: -90px;}
+.content_area .con4 dt{margin-top: 130px; text-align: center; font-size: 1.2em;}
+.content_area .con4 dt::after{background: #fff;}

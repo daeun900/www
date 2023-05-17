@@ -1,0 +1,39 @@
+#headerArea .header{position: fixed; top:0; z-index:30; width:100%; overflow: hidden; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,.1);}
+#headerArea .header h1 a{display: block; width:80px;height:35px; margin: 10px 15px 5px 15px;background: url(../images/logo.png) center no-repeat;background-size:cover; text-indent: -1000px; overflow: 'hidden'; float: left;;}
+#headerArea .header .menu{display:block; font-size:24px; color:#333; padding:15px; float: right;}
+
+.main{background: url(../images/sub3visual.jpg) 20% no-repeat; height:220px; background-size: cover; position: relative;} 
+.main h3{font-size: 1.7em; font-weight: 500; color:#fff; position: absolute; left:50%; top:50%; margin-left: -44px; margin-top: 10px; }
+
+.subNav{position:relative; left:0; top:-20px; }
+.subNav ul{width:90%; margin: 0 auto; overflow: hidden; border-radius: 10px; box-shadow: 2px 1px 8px 0px rgba(0,0,0,.1);}
+.subNav ul li{width:33.3%; float: left; text-align: center; background: #fff;}
+.subNav ul li a{border: 1px solid #f8f8f8; display: block; padding:13px 0;}
+.subNav ul li a.current{color:#fff; background: #0c205b; font-weight: 500; border:1px solid #0c205b;}
+
+/* 회사소개 내용 영역 */
+.title_area h2{font-size:1.5em; font-weight: 600; margin:30px 0 20px 0  ;text-align: center;}
+.title_area p{font-size: 1.2em; font-weight: 500; text-align: center; margin-bottom: 30px;}
+.title_area p span{color: #005793; font-weight: 600;}
+
+.content_area .intro{position: relative;}
+.content_area .intro p{ font-weight: 500 ;line-height: 2em; text-align: center; margin:0 5%;}
+.content_area .intro img{position: absolute; left:50%; margin-left:-100px; margin-top: 20px;}
+.content_area .intro dl{ margin-top: 130px;margin-bottom: 30px ;overflow: hidden;}
+.content_area .intro dt{font-size: 1.4em; font-weight: 500; text-align: center; color: #0c205b;}
+.content_area .intro dd{width:45%; margin: 2.5%; float: left;font-size: 1em; font-weight: 500; padding:10px 0;
+  background: #59a9de; border-radius: 30px; color:white;text-align: center;}
+
+.content_area .ethic p{font-size: 1.2em; font-weight: 500; text-align: center; margin-bottom: 30px;}
+.content_area .ethic p span{color: #005793; font-weight: 600;}
+
+.content_area .ethic ul li .img_box{width:100%; height:200px; }
+.content_area .ethic ul li:first-child .img_box{background: url(../images/sub3_1ethic1.jpg) center no-repeat; background-size: cover;}
+.content_area .ethic ul li:nth-child(2) .img_box{background: url(../images/sub3_1ethic2.jpg) top center no-repeat;background-size: cover;}
+.content_area .ethic ul li:last-child .img_box{background: url(../images/sub3_1ethic3.jpg) center no-repeat;background-size: cover;}
+
+.content_area .ethic dl{width:90%; margin-left: 5%; }
+.content_area .ethic dl dt{font-size: 1.1em; font-weight: 500; line-height: 1.8em ; margin:20px 0;position: relative;}
+.content_area .ethic dl dt::after{content: ''; width:60px; height:2px; background-color: #ee312f; position:absolute; bottom:-5px; left:0; }
+
+.content_area .ethic dl dd{line-height: 2em; text-align: justify; text-indent: 5px; margin-bottom: 50px;}

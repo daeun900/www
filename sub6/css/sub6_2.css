@@ -1,0 +1,15 @@
+.sub_nav li .current::after{bottom:-4px;}
+.sub_nav li .current:hover::after{bottom:-4px;}
+.content_area{position: relative;}
+.content_area .all{color:#fff; background: #005793; width:170px; padding:15px 0 15px 35px ;position: absolute; top:-100px; right:66px;}
+.content_area .all span i{font-size: 1.1em; color:#fff; padding:0 5px;;}
+.content_area ul{width:1100px; margin:150px 0 100px 50px; display: block;}
+.content_area ul li{position: relative;}
+.content_area ul li .plus{display: block; position:absolute; right:15px; top:10px; color:#333;}
+
+.content_area ul li .q a{font-size:1.2em; font-weight: 600; display: block; padding:15px 70px; border-bottom: 1px solid #ccc; margin-bottom:20px; cursor:pointer;}
+.content_area ul li .q a::before{content:"Q"; color:#005793;display: block; position: absolute; top:15px; left:30px; font-size: 1.4em; font-weight: 600;}
+.content_area ul li .q i{font-size:.8em}
+
+.content_area ul li .a{width:1000px; overflow: hidden; padding:25px 70px; background-color: #f8f8f8;  text-align: justify; line-height: 2em;}
+.content_area ul li .a::before{content: "A"; color:#1f415c; display: block; position:absolute; left:30px; font-size: 1.5em; font-weight: 600;}

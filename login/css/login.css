@@ -1,0 +1,21 @@
+body{background: #f6f6f6;}
+
+header h1{text-align: center; padding:55px 0;}
+header h1 img{width:200px}
+
+.login_box{width:450px; padding:50px;border-radius: 10px; box-shadow: 1px 1px 10px 1px rgba(0,0,0,.1); background:white ;position: relative; left:50%; margin-left:-275px;}
+.login_box h2{font-size: 30px; margin-bottom: 70px; text-align: center;}
+.login_box ul li{position: relative; margin-bottom: 20px;}
+.login_box li span{position:absolute; left:20px; top:20px; font-size: 18px;;}
+
+.login_box input{width:380px; padding:20px 20px 20px 50px; border-radius: 10px; border:1px solid #ccc; font-size: 16px;}
+.login_box .loginBtn{width:450px ;padding:20px;background: #005793; color:#fff; transition: all .3s ease; cursor: pointer;}
+.login_box .loginBtn:hover{background: #00a5e5;}
+
+.find{display: flex; justify-content: center; margin: 10px 0;}
+.find a{padding: 20px; position: relative;}
+.find a:hover{color:#005793}
+.find a:first-child::after{content: ''; display: block; width:1px; height:15px; background-color: #ccc  ;position: absolute; right: 0; top:23px;}
+.join{ border-top: 1px solid #ccc; padding-top: 40px;}
+.join a{width:400px; padding:20px; border-radius: 10px; border:1px solid #ccc;text-align: center; transition: all .3s ease;}
+.join a:hover{ box-shadow: 1px 1px 10px 1px rgba(0,0,0,.1); }

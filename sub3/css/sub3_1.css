@@ -1,0 +1,38 @@
+.intro{position: relative; height:550px;}
+.intro::before{content: ''; background-color: #ebf0f2; width:2000px; height:550px; position:absolute; top:0; left:50%; margin-left:-1000px; z-index:-10;}
+.intro p{font-size:18px; font-weight: 500; line-height: 38px;text-align: center;  padding:70px 0 100px 0;opacity: 0;transition: all 1s ease;}
+.intro p.active{opacity: 1;}
+.intro dl{position:relative; color:white; font-size:20px; text-align:center;opacity: 0; }
+.intro dl.active{animation:moveDown .7s .5s forwards}
+@keyframes moveDown{from{opacity:0; top:-50px;}to{opacity: 1; top:0}}
+.intro dl dt{width:200px; height:200px; border-radius: 50%; background-color: #5ca9de;
+             position:absolute; top:0; left:500px;    box-shadow: 2px 4px 5px 1px rgb(0 0 0 / 20%);transition:all .5s ease;}
+.intro dl dt:hover{ top:-15px;}
+.intro dl dt img{width:120px; margin:50px 0 20px 0;}
+.intro dl dd{width:320px;  border-radius: 50px; background-color: #005793; position:absolute; padding:25px 0; transition:all .3s ease; }
+.intro dl dd:hover{background-color:#5ca9de;box-shadow: 2px 4px 5px 1px rgb(0 0 0 / 20%)}
+.intro dl dd:first-of-type{top:-10px; left:100px;}
+.intro dl dd:nth-of-type(2){top:130px; left:100px;}
+.intro dl dd:nth-of-type(3){top:-10px; right:100px;}
+.intro dl dd:last-of-type{top:130px; right:100px;}
+.intro::after{content: '';
+    display: block;
+    clear: both;
+    width: 100%;}
+
+.ethic p{font-size: 30px; font-weight: 400; margin:100px 0;text-align: center;}
+.ethic p span{font-weight: 700; color:#005793;}
+
+.ethic ul li{overflow: hidden; margin-bottom:100px;}
+.ethic ul li .img_box{float: left; border-radius: 50px 0 50px 0; width:500px; height:400px; overflow:hidden;}
+.ethic ul li .img_box img{width:500px;transition:all .3s ease;}
+.ethic ul li .img_box:hover img{ transform: scale(1.05);}
+.ethic ul dl{width:600px; float:right;}
+.ethic ul dl dt{font-size: 18px; line-height: 36px; font-weight: 500; margin-bottom:50px; position: relative;}
+.ethic ul dl dt::after{content: ''; width:100px; height:2px; background-color: #ee312f; position:absolute; bottom:-20px; left:0;}
+.ethic ul dl dd{ font-size:16px; line-height: 32px;;}
+
+
+
+.ethic ul li:nth-of-type(2) .img_box{float:right; border-radius: 50px;}
+.ethic ul li:nth-of-type(2) dl{float:left;}

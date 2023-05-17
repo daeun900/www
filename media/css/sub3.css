@@ -1,0 +1,181 @@
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+.videoBox h2{ position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); font-size: 5em; 
+    font-family: 'zoo'; font-size: 3em; color:#fff;letter-spacing: 1px ;}
+#imgBG{display: block;}
+#videoBG {position:absolute;}
+#content{position: relative;}
+
+
+          
+#content .about{background-color: #fff; position: relative; overflow: hidden;}
+#content .about h3{font-family: 'zoo';font-size: 3vw ;padding: 70px 0 50px 0; overflow: hidden; }
+#content .about h3 span{display: block;float: left; padding: 0 5px;}
+#content .about h3 span:nth-child(1){color:#eb452b; margin-left: 41%;}
+#content .about h3 span:nth-child(2){color:#da9c43; }
+#content .about h3 span:nth-child(3){color:#f1dc65; }
+#content .about h3 span:nth-child(4){color:#449e46; }
+#content .about h3 span:nth-child(5){color:#38b9c8; }
+#content .about h3 span:nth-child(6){color:#4466e6;}
+#content .about h3 span:nth-child(7){color:#965ae9; }
+
+
+#content .about p{width: 68%; margin-left: 16%; line-height: 2em; letter-spacing: 1px; padding-bottom: 100px;text-align: center; }
+
+#content h3{font-family: 'zoo'; font-size: 3vw; color:#fff;letter-spacing: 1px ;text-shadow: 0 0 6px rgba(268,268,268,1); text-align: center;padding: 5% 0;}
+#content h4{font-family: 'zoo'; font-size: 1.2em; color:#fff;letter-spacing: 1px ;text-shadow: 0 0 6px rgba(268,268,268,.8); text-align: center;padding: 5% 0;}
+#content h4 b{font-family: 'Roboto', sans-serif;}
+
+
+.trailer{background:#ed6938; padding:7% 5%;}
+.trailer ul li{padding: 50px 0;}
+.trailer ul li dd{color:white;;line-height: 2em;text-align: center;}
+
+.trailer ul{display: grid;grid-template-columns:  repeat(3, 1fr);grid-gap: 5%; 
+    grid-template-areas: 
+     'a a a' 
+     'b c d'
+;}
+
+.trailer ul li:nth-child(1){grid-area: a; padding:0 20%;}
+.trailer ul li:nth-child(1) .video::before{content:'#1'; width: 20%; height: 20%; left: -10%; top: -5%; background-size: 67%; padding: 3% 0 0 8%; font-size: 2vw;}
+.trailer ul li:nth-child(2){grid-area: b;}
+.trailer ul li:nth-child(2) .video::before{content:'#2';}
+.trailer ul li:nth-child(3){grid-area: c;}
+.trailer ul li:nth-child(3) .video::before{content:'#3';}
+.trailer ul li:nth-child(4){grid-area: d;}
+.trailer ul li:nth-child(4) .video::before{content:'#4';}
+
+.trailer .video{position: relative;box-shadow: 0 0 10px #fff; transition: all .3s;}
+.trailer .video:hover{box-shadow: 0 0 20px #fff}
+.trailer .video::before{content: '';position: absolute; width: 30%; height: 30%; left:-14%; top:-14%;background-image: url(../images/sub3/clip.png) ;background-size: 64%; background-repeat: no-repeat;
+                        font-size: 1.5vw;font-weight: 600 ;padding: 4% 0 0 12%; z-index: 5;}
+
+.trailer .video a {position: relative; display: block;}              
+.trailer .video a::after{content: ''; position:absolute; left: 50%; top:50%;     transform: translate(-50%, -50%);display: block; width: 70px;height: 70px;background: url(../images/main/youtube.png) 50% 50% no-repeat;
+    background-size: 100% auto;transition: all.3s;z-index: 2;}
+.trailer .video a:hover::after{background: url(../images/main/youtube_on.png) 50% 50% no-repeat;}
+.trailer .video { position: relative;cursor: pointer;}
+.trailer .video .popup-youtube>img { width: 100%; }
+
+.ost{background:#4f80bb; padding: 0 10%; overflow: hidden;}
+.ost ul{float: left;width: 40%;}
+.ost ul li{margin: 50px 0;}
+.ost ul li img{transition: all .3s;}
+.ost ul li img:hover{filter: drop-shadow(0 0 10px #fff);  }
+.ost .turntable{width: 60%; float: right; margin: 20% 0; position: relative;}
+.ost .turntable img:nth-child(1){ z-index:1;}
+.ost .turntable img:nth-child(2){position: absolute; top: 0; left: 0; width: 80%; z-index: 3;}
+.ost img{width: 80%; margin-left: 10%; z-index: 2; position: relative;}
+
+.audio_control{ display: flex; justify-content: center;}
+.button {height: 70px; width: 70px;border-radius: 100%;  background-color: #fff;filter: drop-shadow(0 10px 0 #101016);
+    display: flex; justify-content: center;align-items: center; cursor: pointer; transition: all ease 0.1s; position: relative;top: -10px; margin: 15px; }
+.fa { color: #4f80bb;opacity: .8 }
+.button:hover {transform: translate(0, 10px);filter: none; clip-path: circle(50%);} 
+.button:hover > .fa { opacity: 1; }
+.button:active { filter: drop-shadow(0 -10px 0 #101016);transform: translate(0, 20px); background-color: #21212A; }
+.button:hover > a { color: #C4C4C4;}
+  
+
+.ost li img.rotation {animation:rotation 2s .5s infinite linear;}
+@keyframes rotation { from {transform: rotate(0deg)}to {transform: rotate(360deg); }}
+
+footer{background-color:#4f80bb ;}
+
+
+
+
+
+/*일반 PC*/
+@media screen and (max-width:1280px) {
+    #content .about h3{font-size: 3.5vw ;}
+    #content .about h3 span:nth-child(1){ margin-left: 41%;}
+
+    .trailer ul li:nth-child(1) .video::before{padding: 3% 0 0 8%; }
+    .trailer .video::before{padding: 3% 0 0 12%;}
+
+    .trailer ul li:nth-child(2) dd{display: -webkit-box;-webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden; height: auto;}
+    .trailer ul li:nth-child(3) dd{display: -webkit-box;-webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden; height: auto;}
+    .trailer ul li:nth-child(4) dd{display: -webkit-box;-webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden; height: auto;}
+
+    #content h3{padding: 10% 0 5% 0;}
+    .ost ul{float: none;width:auto; display: flex; justify-content: space-between;}
+    .ost .turntable{width:76%; margin:5% 12% 0 12%; ;float: none;}
+
+
+
+} 
+
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    #content .about h3{font-size: 4vw; padding: 50px 0 30px 0;}
+    #content .about h3 span:nth-child(1){ margin-left: 39%;}
+    #content .about p{width: 70%;margin-left: 15%; line-height: 1.5em; padding-bottom: 50px; }
+
+    .trailer ul{display: grid;grid-template-columns:  repeat(2, 1fr);grid-gap: 5%; 
+        grid-template-areas: 
+         'a b' 
+         'c d'
+    ;}
+    .trailer ul li{padding:50px 0 0 0}
+    .trailer ul li:nth-child(1){padding:50px 0 0 0}
+    .trailer ul li:nth-child(1) dd{display: -webkit-box;-webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow: ellipsis; overflow: hidden; height: auto;}
+    .trailer ul li:nth-child(2) dd{ -webkit-line-clamp: 2;}
+    .trailer ul li:nth-child(3) dd{-webkit-line-clamp: 2;}
+    .trailer ul li:nth-child(4) dd{-webkit-line-clamp: 2;}
+
+    .trailer ul li:nth-child(1) .video::before{width: 30%; height: 30%; left:-14%; top:-14%;background-size: 64%; padding: 3% 0 0 12%; }
+    .trailer .video::before{ font-size: 2vw;font-weight: 600 ;}
+
+    #content h3{font-size: 5vw;}
+    }
+    
+    /* 소형 테블릿 */
+    @media screen and (max-width:768px) {
+        .trailer ul{display: grid;grid-template-columns:  repeat(1, 1fr);grid-gap: 0; 
+            grid-template-areas: 
+             'a' 
+             'b'
+        ;}
+        .trailer ul li{padding:10% 0}
+        .trailer ul li:nth-child(1){padding:10% 0}
+
+        .trailer ul li:nth-child(1) dd{display: block}
+        .trailer ul li:nth-child(1) .video::before{left: -6%;top: -23%;background-size: 53%;padding: 3% 0 0 10%; font-size: 4vw;}
+        .trailer ul li .video::before{left: -6%;top: -23%;background-size: 53%;padding: 3% 0 0 10%; font-size: 4vw;}
+   
+        .trailer ul li:nth-child(3){display: none;}
+        .trailer ul li:nth-child(4){display: none;}
+ 
+       
+
+    }
+    
+    /* 모바일 */
+    @media screen and (max-width:640px) {
+         #content .about h3{font-size: 6vw;}
+        #content .about h3 span:nth-child(1){ margin-left: 33%;}
+        #content .about p{width: 80%;margin-left: 10%; font-size: .8em;}
+        #content h3{font-size: 6vw;}
+   
+        .trailer ul li:nth-child(1) dd{display: -webkit-box; }
+        .trailer ul li dd{font-size: .8em;}
+        .ost{ padding: 0;}
+    
+    }
+    
+    /* 최소 사이즈 처리 */
+    @media screen and (max-width:480px) {
+        #wrap { min-width:320px; }
+        #content h4{font-size: 1em; }
+        #content .about h3 span:nth-child(1){ margin-left: 30%;}
+        .trailer ul li:nth-child(1) .video::before{padding: 1% 0 0 10%; }
+        .trailer ul li .video::before{padding: 1% 0 0 10%; }
+        .button {height: 50px; width: 50px; }
+        .fa { font-size: .8em; }
+    }

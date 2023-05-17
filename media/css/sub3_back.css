@@ -1,0 +1,164 @@
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+.videoBox h2{ position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); font-size: 5em; 
+    font-family: 'zoo'; font-size: 3em; color:#fff;letter-spacing: 1px ;}
+#imgBG{display: block;}
+#videoBG {position:absolute;}
+#content{position: relative;}
+
+
+          
+#content .about{background-color: #fff; position: relative; overflow: hidden;}
+#content .about h3{font-family: 'zoo';font-size: 3vw ;padding: 70px 0 50px 0; overflow: hidden; }
+#content .about h3 span{display: block;float: left; padding: 0 5px;}
+#content .about h3 span:nth-child(1){color:#eb452b; animation: textani 1s alternate infinite ease-in-out; margin-left: 41%;}
+#content .about h3 span:nth-child(2){color:#da9c43; animation: textani2 1s alternate infinite ease-in-out;}
+#content .about h3 span:nth-child(3){color:#f1dc65; animation: textani3 1s alternate infinite ease-in-out;}
+#content .about h3 span:nth-child(4){color:#449e46; animation: textani 1s alternate infinite ease-in-out;}
+#content .about h3 span:nth-child(5){color:#38b9c8; animation: textani2 1s alternate infinite ease-in-out;}
+#content .about h3 span:nth-child(6){color:#4466e6; animation: textani3 1s alternate infinite ease-in-out;}
+#content .about h3 span:nth-child(7){color:#965ae9; animation: textani 1s alternate infinite ease-in-out;}
+
+@keyframes textani{from{transform: rotate(-8deg);}to{transform: rotate(8deg);}}
+@keyframes textani2{from{transform: rotate(8deg);}to{transform: rotate(-8deg);}}
+@keyframes textani3{from{transform: translate(1px ,-3px);}to{transform: translate(0 1px);}}
+
+#content .about p{width: 68%; margin-left: 22.5%; line-height: 2em; letter-spacing: 1px; padding-bottom: 100px;text-align: center; }
+
+
+#content h3{font-family: 'zoo'; font-size: 3vw; color:#fff;letter-spacing: 1px ;text-shadow: 0 0 10px rgba(268,268,268,1); text-align: center;padding: 5% 0;}
+#content h4{font-family: 'zoo'; font-size: 1.2em; color:#fff;letter-spacing: 1px ;text-shadow: 0 0 10px rgba(268,268,268,.8); text-align: center;padding: 5% 0;}
+#content h4 b{font-family: 'Roboto', sans-serif;}
+
+.trailer{background:#ed6938; padding:7% 5%;}
+.trailer ul li{padding: 50px 0;}
+.trailer ul li dd{color:white;;line-height: 2em;text-align: center;}
+
+
+
+.trailer ul{display: grid;grid-template-columns:  repeat(3, 1fr);grid-gap: 5%; 
+    grid-template-areas: 
+     'a a a' 
+     'b c d'
+;}
+
+.trailer ul li:nth-child(1){grid-area: a; padding:0 20%;}
+.trailer ul li:nth-child(1) .video::before{content:'#1'; width: 20%; height: 20%; left: -10%; top: -5%; background-size: 67%; padding: 3% 0 0 8%; font-size: 2vw;}
+.trailer ul li:nth-child(2){grid-area: b;}
+.trailer ul li:nth-child(2) .video::before{content:'#2';}
+.trailer ul li:nth-child(3){grid-area: c;}
+.trailer ul li:nth-child(3) .video::before{content:'#3';}
+.trailer ul li:nth-child(4){grid-area: d;}
+.trailer ul li:nth-child(4) .video::before{content:'#4';}
+
+.trailer .video{position: relative;box-shadow: 0 0 10px #fff}
+.trailer .video::before{content: '';position: absolute; width: 30%; height: 30%; left:-14%; top:-14%;background-image: url(../images/sub3/clip.png) ;background-size: 66%; background-repeat: no-repeat;
+                        font-size: 1.5vw; padding: 4% 0 0 11%;}
+.trailer .video::after{content: ''; position:absolute; left: 50%; top:50%;     transform: translate(-50%, -50%);display: block; width: 70px;height: 70px;background: url(../images/main/youtube.png) 50% 50% no-repeat;
+    background-size: 100% auto;transition: all.3s;z-index: 2;}
+.trailer .video:hover::after{background: url(../images/main/youtube_on.png) 50% 50% no-repeat;}
+.trailer .video { position: relative;cursor: pointer;}
+.trailer .video .popup-youtube>img { width: 100%; }
+
+.ost{background:#4f80bb; padding: 0 10%; overflow: hidden;}
+.ost ul{float: left;width: 40%;}
+.ost ul li{margin: 50px 0;}
+.ost .turntable{width: 60%; float: right; margin: 20% 0; position: relative;}
+.ost .turntable img:nth-child(1){ z-index:1;}
+.ost .turntable img:nth-child(2){position: absolute; top: 0; left: 0; width: 80%; z-index: 3;}
+.ost img{width: 80%; margin-left: 10%; z-index: 2; position: relative;}
+
+.audio_control{ display: flex; justify-content: center;}
+.button {height: 70px; width: 70px;border-radius: 100%;  background-color: #fff;filter: drop-shadow(0 10px 0 #101016);
+    display: flex; justify-content: center;align-items: center; cursor: pointer; transition: all ease 0.1s; position: relative;top: -10px; margin: 15px; }
+.fa { color: #4f80bb;opacity: .8 }
+.button:hover {transform: translate(0, 10px);filter: none; clip-path: circle(50%);} 
+.button:hover > .fa { opacity: 1; }
+.button:active { filter: drop-shadow(0 -10px 0 #101016);transform: translate(0, 20px); background-color: #21212A; }
+.button:hover > a { color: #C4C4C4;}
+  
+
+.ost li img.rotationImg1 {animation: move1 .6s ease-in-out,
+                        rotation1 2s .5s infinite linear;}
+.ost li img.rotationImg2 {animation: move2 .6s ease-in-out,
+                          rotation2 2s .5s infinite linear;}
+
+
+@keyframes move1 {from {transform: none; }to { transform: translate(150%, 75%)}}
+@keyframes move2 { from {transform: none; } to {transform: translate(150%, -77%)}}
+
+@keyframes rotation1 { from {transform: translate(150%, 75%)}to {transform: translate(150%, 75%) rotate(360deg); }}
+@keyframes rotation2 {from {transform: translate(150%, -77%)}to {transform: translate(150%, -77%) rotate(360deg);}}
+
+footer{background-color:#4f80bb ;}
+
+@media screen and (max-width:1630px) {
+    @keyframes move2 { from {transform: none; } to {transform: translate(150%, -83%)}}
+    @keyframes rotation2 {from {transform: translate(150%, -83%)}to {transform: translate(150%, -83%) rotate(360deg);}}
+
+} 
+
+@media screen and (max-width:1430px) {
+    @keyframes move2 { from {transform: none; } to {transform: translate(150%, -91%)}}
+    @keyframes rotation2 {from {transform: translate(150%, -91%)}to {transform: translate(150%, -91%) rotate(360deg);}}
+
+} 
+
+
+/*일반 PC*/
+@media screen and (max-width:1280px) {
+    .trailer ul li:nth-child(2) dd{display: -webkit-box;-webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden; height: auto;}
+    .trailer ul li:nth-child(3) dd{display: -webkit-box;-webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden; height: auto;}
+    .trailer ul li:nth-child(4) dd{display: -webkit-box;-webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden; height: auto;}
+
+    .ost ul{float: none;width:auto; display: flex; justify-content: space-between;}
+
+    .ost .turntable{width:640px; margin:5% 0 0 0; ;float: none; position: relative; left: 50%; margin-left: -320px;}
+
+    @keyframes move1 {from {transform: none; }to { transform: translate(79%, -143%)}}
+    @keyframes move2 { from {transform: none; } to {transform: translate(-84%, -142%)}}
+    
+    @keyframes rotation1 { from {transform: translate(79%, -143%)}to {transform: translate(79%, -143%) rotate(360deg); }}
+    @keyframes rotation2 {from {transform: translate(-84%, -142%)}to {transform: translate(-84%, -142%) rotate(360deg);}}
+
+} 
+@media screen and (max-width:1200px) {
+    @keyframes move1 {from {transform: none; }to { transform: translate(68%, -143%)}}
+    @keyframes move2 { from {transform: none; } to {transform: translate(-75%, -142%)}}
+    
+    @keyframes rotation1 { from {transform: translate(68%, -143%)}to {transform: translate(68%, -143%) rotate(360deg); }}
+    @keyframes rotation2 {from {transform: translate(-75%, -142%)}to {transform: translate(-75%, -142%) rotate(360deg);}}
+} 
+
+@media screen and (max-width:1110px) {
+    @keyframes move1 {from {transform: none; }to { transform: translate(57%, -143%)}}
+    @keyframes move2 { from {transform: none; } to {transform: translate(-69%, -142%)}}
+    
+    @keyframes rotation1 { from {transform: translate(57%, -143%)}to {transform: translate(57%, -143%) rotate(360deg); }}
+    @keyframes rotation2 {from {transform: translate(-69%, -142%)}to {transform: translate(-69%, -142%) rotate(360deg);}}
+} 
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+
+    }
+    
+    /* 소형 테블릿 */
+    @media screen and (max-width:768px) {
+     
+
+    }
+    
+    /* 모바일 */
+    @media screen and (max-width:640px) {
+   
+    }
+    
+    /* 최소 사이즈 처리 */
+    @media screen and (max-width:480px) {
+        #wrap { min-width:320px; }
+    }

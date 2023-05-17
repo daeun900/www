@@ -1,0 +1,162 @@
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+.videoBox h2{ position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); font-size: 5em; 
+    font-family: 'zoo'; font-size: 3em; color:#fff;letter-spacing: 1px ;}
+#imgBG{display: block;}
+#content{position: relative;}
+
+
+          
+#content .about{background-color: #fff; position: relative; overflow: hidden;}
+#content .about h3{font-family: 'zoo';font-size: 3vw ;padding: 70px 0 50px 0; overflow: hidden; }
+#content .about h3 span{display: block;float: left; padding: 0 5px;}
+#content .about h3 span:nth-child(1){color:#eb452b; animation: textani 1s alternate infinite ease-in-out; margin-left: 41%;}
+#content .about h3 span:nth-child(2){color:#da9c43; animation: textani2 1s alternate infinite ease-in-out;}
+#content .about h3 span:nth-child(3){color:#f1dc65; animation: textani3 1s alternate infinite ease-in-out;}
+#content .about h3 span:nth-child(4){color:#449e46; animation: textani 1s alternate infinite ease-in-out;}
+#content .about h3 span:nth-child(5){color:#38b9c8; animation: textani2 1s alternate infinite ease-in-out;}
+#content .about h3 span:nth-child(6){color:#4466e6; animation: textani3 1s alternate infinite ease-in-out;}
+#content .about h3 span:nth-child(7){color:#965ae9; animation: textani 1s alternate infinite ease-in-out;}
+
+@keyframes textani{from{transform: rotate(-8deg);}to{transform: rotate(8deg);}}
+@keyframes textani2{from{transform: rotate(8deg);}to{transform: rotate(-8deg);}}
+@keyframes textani3{from{transform: translate(1px ,-3px);}to{transform: translate(0 1px);}}
+
+#content .about p{width: 55%; margin-left: 22.5%; line-height: 2em; letter-spacing: 1px; padding-bottom: 100px;text-align: center; }
+
+#content .character{width: 90%;margin:0 5%  ;background-color: rgba(77,58,58,.95); padding: 0 100px 300px 100px; box-sizing: border-box;}
+#content .character h4{font-family: 'zoo'; font-size: 3em; color:#fff;letter-spacing: 1px ; text-shadow: 0 0 6px rgba(255,255,255,0.8); text-align: center; padding:100px 0;}
+#content .character h5{font-family: 'zoo'; font-size: 2.5em; letter-spacing: 1px; text-align: center; padding: 50px 0;}
+
+#content .character dl{padding: 0 5%;}
+#content .character dd{color: #fff; padding: 1%; font-size: 1.2em;}
+#content .character dd span{display: inline-block; width: 130px;}
+#content .character .judy_text h5,#content .character .judy_text dd span{color:#e28496} 
+#content .character .nick_text h5,#content .character .nick_text dd span{color:#c9880d} 
+
+
+.judy_img{position: relative;}
+.judy_img::before{content: ''; width: 70%; height: 70%; position: absolute; top:19%; left: 13%; 
+                        border: 7px dotted #e28496; border-radius: 50%; animation: rotate 10s linear infinite;}
+@keyframes rotate{from{transform: rotate(0);}to{transform: rotate(360deg);}}
+.judy_img img{position: relative; z-index: 5;transition: all .5s;}
+.judy_img img:hover{filter: drop-shadow(0 0 10px #e28496);}
+.judy_img span::before{content: ''; width: 12%; height: 12%; position: absolute; top: 64%; left:11%; transform: scaleX(-1) rotate(10deg);
+    background-image: url(../images/main/carrot.png); background-repeat: no-repeat; background-size: 100%;}
+.judy_img span::after{content: ''; width: 12%; height: 12%; position: absolute; top: 29%; right: 14%; 
+    background: url(../images/main/carrot.png); background-repeat: no-repeat; background-size: 100%;}
+
+.nick_img{position: relative;}
+.nick_img::before{content: ''; width: 70%; height: 70%; position: absolute; top:19%; left: 13%; 
+                        border: 7px dotted #c9880d; border-radius: 50%; animation: rotate 10s linear infinite;}
+.nick_img img{position: relative; z-index: 5;transition: all .5s;}
+.nick_img img:hover{filter: drop-shadow(0 0 10px #c9880d);}
+
+.nick_img span::before{content: ''; width: 10%; height: 10%; position: absolute; top: 29%; left:13%; transform: scaleX(-1) rotate(10deg);
+    background-image: url(../images/main/lollypop.png); background-repeat: no-repeat; background-size: 100%;}
+.nick_img span::after{content: ''; width: 10%; height: 10%; position: absolute; top: 44%; right: 9%; transform: rotate(15deg); 
+    background: url(../images/main/lollypop.png); background-repeat: no-repeat; background-size: 100%;}
+
+
+.character .main_ch{display: grid;grid-template-columns:  repeat(2, 1fr);grid-gap: 20px; 
+    grid-template-areas: 
+     'a c' 
+     'b d'
+;}
+ 
+.character .main_ch img{ width: 100%; height: 100%;object-fit: cover;}
+ 
+.judy_img{grid-area: a;}
+.judy_text{grid-area: b;}
+.nick_img{grid-area: c;}
+.nick_text{grid-area: d;}
+
+
+
+.swiper img{width: 45%; margin: 0 auto;position: relative;left: 50%;top: 0;transform: translateX(-50%);}
+
+.swiper-button-next{ right: 150px; padding: 10px;color: #fff; right: 0;}
+.swiper-button-prev{ left: 150px;padding: 10px;color: #fff; left: 0; }
+.swiper-button-next:hover{ filter: drop-shadow(0 0 5px #fff);}
+.swiper-button-prev:hover{ filter: drop-shadow(0 0 5px #fff) }
+
+.swiper-slide img{filter: blur(2px) grayscale(1);transition: all 0.3s ease-out;}
+.swiper-slide-visible img{filter: blur(0) grayscale(0) drop-shadow(0 0 10px #fff);}
+
+#content .character .sub_ch h5{padding: 100px 0 50px 0;}
+.swiper-slide h5{display:none;transition:  all 0.3s ease-out;}
+.swiper-slide-visible h5{display: block; color: #fff;}
+
+
+
+
+ footer{background-color:unset;padding-top:0; margin-top: -255px; }
+
+
+ /* 일반 pc */
+@media screen and (max-width:1280px) {
+    #content .about h3{font-size: 3.5vw ;}
+    #content .about h3 span:nth-child(1){ margin-left: 41%;}
+
+    #content .character{width: 95%;margin:0 2.5% }
+    #content .character dl{padding: 0;}
+    #content .character dd{font-size: 1em;}
+    #content .character .sub_ch h5{padding: 100px 0 10px 0;}
+    }
+    
+    /* 테블릿 */
+@media screen and (max-width:1024px) {
+    #content .about h3{font-size: 4vw; padding: 50px 0 30px 0;}
+    #content .about h3 span:nth-child(1){ margin-left: 39%;}
+    #content .about p{width: 70%;margin-left: 15%; line-height: 1.5em; padding-bottom: 50px; }
+
+    #content .character{width: 100%;margin:0; padding: 0 50px 300px 50px; }
+    #content .character h4{font-size: 5vw; padding: 50px 0 25px 0;}
+    #content .character h5{font-size: 4vw;}
+
+    .character .main_ch{
+        grid-template-areas: 
+         'a b' 
+         'c d'
+    ;}
+    #content .character .sub_ch h5{padding: 50px 0 10px 0;}
+}
+    
+    /* 소형 테블릿 */
+    @media screen and (max-width:768px) {
+    #content .character{padding: 0 25px 300px 25px; }
+    .judy_img::before{display: none;}
+    .nick_img::before{display: none;}
+    .judy_img span::after{ top: 61%;}
+    .nick_img span::before{ top: 43%;}
+    #content .character h4{padding: 75px 0 30px 0;}
+    }
+    
+    /* 모바일 */
+    @media screen and (max-width:640px) {
+        #content .about h3{font-size: 6vw;}
+        #content .about h3 span:nth-child(1){ margin-left: 33%;}
+        #content .about p{width: 80%;margin-left: 10%; font-size: .8em;}
+        #content .character h4{font-size: 6vw; }
+        #content .character h5{font-size: 5vw;padding: 30px 0;}
+        #content .character dl{padding: 0 7% ; font-size: 4vw;}
+        .judy_img::before{display: block;}
+        .nick_img::before{display: block;}
+        .character .main_ch{grid-template-columns:  repeat(1, 1fr); 
+            grid-template-areas: 
+             'a' 
+             'b'
+             'c' 
+             'd'
+        ;}
+    }
+    
+    /* 최소 사이즈 처리 */
+    @media screen and (max-width:480px) {
+        #wrap { min-width:320px; }
+        #content .about h3 span:nth-child(1){ margin-left: 30%;}
+        #content .character dl{padding: 0 2%
+    }
+}

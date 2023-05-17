@@ -1,0 +1,4 @@
+table{ width:800px; text-align:center; font-size:14px; border-collapse: collapse;}
+td,th{ padding: 14px;}
+tr{border-bottom: 1px solid #005793;;}
+table thead{background-color: #005793; color:white; border:none;}

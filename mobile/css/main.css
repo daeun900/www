@@ -1,0 +1,65 @@
+#headerArea .header{position: fixed; top:0; z-index:30; width:100%; overflow: hidden; transition: all .3s}
+#headerArea .header h1 a{display: block; width:80px;height:35px; margin: 10px 15px 5px 15px; background: url(../images/logo_white.png) center no-repeat;background-size:cover; text-indent: -1000px; overflow: 'hidden'; float: left;;}
+#headerArea .header .menu{display:block; font-size:24px; color:#fff; padding:15px; float: right;}
+
+#headerArea .header.on{background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,.1);}
+#headerArea .header.on h1 a{background: url(../images/logo.png) center no-repeat;background-size:cover;}
+#headerArea .header.on .menu{color:#333;}
+
+.main{position: relative; overflow: hidden; width:300%}
+.main .gallery ul{overflow: hidden;}
+.main .gallery li{float: left; position: relative; width: 33.3%;}
+.main .gallery li img{width: 100%;}
+.main .gallery li .text{color:#fff; font-size:1.75em; line-height: 1.9em; font-weight: 600 ; position: absolute; left:8%; top:38%; opacity: 0;}
+.main .gallery li .text b{color: #ee312f}
+
+.main .dock{ width:33.3%; position: absolute; bottom:30px; overflow: hidden; display: flex; justify-content: center;}
+.main .dock .mbutton{display: block;float: left; width: 8px; height: 8px; border-radius: 50%; margin:0 5px; background: #fff;}
+
+#content h3{font-size: 1.5em; font-weight: 600; padding:25px 3% 0;}
+#content h3::before{content: ''; font-size:0.8em; font-weight: 400 ;display: block; color:#ee312f; margin-left: -5px;}
+#content .business h3::before{content: 'BUSINESS'}
+#content .about h3::before{content: 'ABOUT US'}
+#content .esg h3::before{content: 'ESG'}
+#content .faq h3::before{content: 'FAQ'}
+
+#content .business{margin-bottom: 25px; position: relative;}
+#content .business ul{width: 200%; overflow: hidden; position: relative; top:0; left: 0;}
+#content .business li{float:left; width:100%; position: relative;}
+#content .business li dl{margin:10px 10%}
+#content .business li dt{font-size:1.3em; font-weight: 500; margin:14px 0;}
+#content .business li dd{font-size: 1rem; line-height: 2em;}
+#content .business img{ width: 80%; margin-left: 10%; box-shadow: 10px 10px 10px rgba(0,0,0,.3); margin-bottom:30px;}
+#content .business .more{display: block; font-size: 1.5em; position: absolute; top:0; right:5%; color:#005793; padding:10px;}
+#content .business_btn{font-size: 2em; opacity: .8;}
+#content .business_btn .left{position: absolute; bottom:23%; left:0; padding:3%}
+#content .business_btn .right{position: absolute;bottom:23%; right:0; padding:3%}
+
+#content .about{background-color: aliceblue;}
+.swiper-container {width: 100%;padding:25px 0 50px 0; }
+.swiper-slide {background-position: center; background-size: cover;width: 80%;height: 200px; border-radius: 30px; }
+.swiper-slide a{display: block;width: 100%; height: 200px; position: relative;}
+.swiper-slide a h4{color:#fff; font-size:2em; font-weight: 500;position: absolute; bottom:5%; right:5%;}
+
+#content .esg .manage_list{ margin: 25px 5%; width:90%;}
+#content .esg .manage_list ul{display: grid; grid-template-columns: 1fr 1fr;}
+#content .esg .manage_list .box1 li:first-child{background: url(../images/esg01x2.jpg) center no-repeat;height: 140px; background-size: cover;}
+#content .esg .manage_list .box1 li:last-child{background: url(../images/esg02x2.jpg)center no-repeat;height: 140px; background-size: cover;}
+#content .esg .manage_list .box2 li:first-child{background: url(../images/esg03x2.jpg) center no-repeat;height: 140px; background-size: cover;}
+#content .esg .manage_list .box2 li:last-child{background: url(../images/esg04x2.jpg)center no-repeat;height: 140px; background-size: cover;}
+#content .esg .manage_list .box3 li:first-child{background: url(../images/esg05x2.jpg) center no-repeat;height: 140px; background-size: cover;}
+#content .esg .manage_list .box3 li:last-child{background: url(../images/esg06x2.jpg)center no-repeat;height: 140px; background-size: cover;}
+#content .esg .manage_list a{display: block; padding:50px 0; height: 100%; box-sizing: border-box;}
+#content .esg .manage_list a p{text-align: center; font-size: 1.3em; font-weight: 600 ;color:#fff;}
+#content .esg .manage_list a p span{color:#ee312f}
+#content .esg .manage_list a h4{text-align: center; font-size: 1.3em; font-weight: 500 ;color:#fff;}
+
+#content .faq{position: relative; margin-bottom: 50px;}
+#content .faq .more{position: absolute; right:6%; top:30px; display: block; color:#005793; font-size: 1.5em; padding: 10px;}
+#content .faq .faq_list .q{width:90%; height:100%; background-color: #f5f5f5; border-radius: 30px; margin-left: 5%; margin-top:20px}
+#content .faq .faq_list .a{width:90%; height:100%; background-color: aliceblue; border-radius: 30px; margin-left: 5%; margin-top:20px; padding: 25px 3% 25px 13%; color:#333; font-size: 1.1em;line-height: 1.5em ;box-sizing: border-box; position: relative; display: none;}
+#content .faq .faq_list .q a.trigger{display: block; padding: 25px 0 25px 13%; color:#333; font-size: 1.2em; position: relative;}
+#content .faq .faq_list .q a.trigger::before{content: 'Q';  color:#005793; display: block; position: absolute; left:5%; top:23px;font-size: 1.5rem; font-weight: 600 ;}
+#content .faq .faq_list .a::before{content: 'A'; color:#666; display: block; position: absolute; left:5%;top:25px; font-size: 1.5rem; font-weight: 600 ;}
+#content .faq .faq_list .q a.trigger i{display: block; position: absolute; right:5%; top:30px;}
+

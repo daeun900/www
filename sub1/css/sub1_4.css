@@ -1,0 +1,18 @@
+.map #hmm_company {width:1000px; height: 500px; margin:0 100px;  border:2px solid #ccc;}
+.content_area{overflow: hidden; position:relative}
+.explain{width:500px; float:left; margin:100px; }
+.explain li{margin-bottom:40px;}
+.explain li dt{margin: 20px 0; font-weight: 500; color:#005793; font-size:1.1em;}
+.explain li dt i{padding-right: 5px;}
+.explain li dd {padding: 4px 0;}
+.explain li dd span{ font-weight: 500; margin-right:20px;}
+.explain li dd .tel{margin-left:20px;}
+
+.explain .subway span{display: block; width:25px; height:25px; border-radius: 50%; background-color: #8936e0; color:white; text-align: center;padding-top:5px ; float:left;}
+.explain .bus dd{overflow: hidden; margin-bottom:10px;}
+.explain .bus span{display:block;width:40px; height:28px; border-radius: 5px; color:white; text-align: center; float:left;}
+.explain .bus1{background-color: #2958a7;}
+.explain .bus2{background-color: #009c3d;}
+.explain .bus3{background-color: rgba(36,184,182,1);}
+
+.company_img{ width:800px; ; position: absolute; bottom:0; right:-300px; }

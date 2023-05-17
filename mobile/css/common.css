@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* 모바일 코딩 필수 공통영역 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@100;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+ margin:0;
+ padding:0;
+ -webkit-text-size-adjust:none; }
+html, body {
+ color:#333;
+ font-size:14px;
+ font-family:'Roboto', 'Noto Sans KR', sans-serif; }
+img, fieldset { border:0; vertical-align:top }
+ul, ol, li, dl { list-style:none; }
+h1, h2, h3, h4, h5, h6 {
+ font-size:100%;
+ font-weight:normal; }
+hr { display:none; }
+a { color:inherit; }
+a, a:link {
+ color:#333;
+ text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {
+ color:#333;
+ text-decoration:none; }
+em, i, address {
+ font-style:normal;
+ font-weight:normal; }
+legend, caption {
+ display:none;
+ clear:both; }
+input, textarea, select, button, table {
+ font-size:inherit;
+ font-family:inherit;
+ line-height:inherit; }
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input {
+ border-radius:1px;}
+textarea { resize:none; }
+label { cursor:pointer; }
+table{border-collapse: collapse;}
+
+.hidden,#skipNav{display: block; position: absolute; left:-1000%;top:0; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+
+/* 전체 공통 */
+#wrap{ width:100%; position: relative;  overflow:hidden;}
+
+/* 헤더공통 */
+#gnb{width:100%; background: #fff; position: fixed; top:0; right:-100%;opacity: 0; z-index:50; }
+#gnb::before{content: ''; display: block; text-align: center; background: url(../images/logo.png) no-repeat; background-size: 100% auto; width:110px; height: 50px; position:absolute; left:50%; margin-top: 20px; margin-left: -55px;}
+#gnb .menu{display:block; font-size:24px; color:#333; padding:15px; float: right;}
+
+#headerSearch{margin-top:100px; position: relative;}
+#headerSearch p{text-align: center; font-size:1.5rem; font-weight: 600;color:#0c205b}
+#headerSearch .search_box{margin-top:10px}
+#headerSearch .search_box input{width:80%; height:40px; margin-left: 10%; outline:none; text-indent: 10px; border:2px solid #0c205b; border-radius: 10px; }
+#headerSearch .search_box button{position: absolute; right:12%; top:54%; padding:5px; font-size:1.5em; color:#0c205b; border: none; background-color: #fff;}
+
+#gnb ul.mainMenu{margin-top: 30px;}
+#gnb li h3 a{font-size: 1.4em; font-weight:600; display: block; padding: 15px 0;}
+#gnb li h3 span{float: right; font-size: .8em;}
+#gnb li{width:85%; margin: 0 auto;}
+#gnb li ul li a{display: block; padding: 15px 0; font-size: 1.2em;} 
+#gnb li ul{background:aliceblue; display: none}
+#gnb .last{border-bottom:1px solid #ccc}
+
+#gnb .sns ul{display: flex; justify-content: center; width:50%; margin-left: 25% ; padding:30px 0}
+#gnb .sns ul li a{display: block; width:32px; height:32px; border-radius:50%; 
+  background-color: rgba(0,87,147,1); overflow: hidden; transition: all .5s ease;}
+#gnb .sns ul li a i{color:white; font-size: 1.3em; display: block; text-align: center; margin-top: 7px; transition: all .5s ease;}
+
+.login{display: flex; justify-content: center;}
+.login a{padding:10px 20px; position: relative; font-size: 1.3em;}
+.login a:first-child::after{content: ''; display: block; width:1px; height:15px; background-color: #ccc  ;position: absolute; right: 0; top:16px;}
+
+/* 푸터공통 */
+#footerArea{background-color: #f5f5f5; padding:25px 0;}
+#footerArea img{width:100px; position: relative; top:0; left:50%; margin-left: -50px}
+#footerArea ul.fnb{overflow: hidden; position: relative; top:0; left:50%;margin:15px 0 10px -165px }
+#footerArea ul.fnb li{float: left; margin-right:15px; color: #666;}
+#footerArea ul.address{margin-left: 5%;}
+#footerArea ul.address li{padding:5px 0;}
+#footerArea p{margin-left: 5%; padding:5px 0;}
+
+#footerArea .family{width:90%;  margin:15px 0 30px 5%;  height:40px; background-color: #ddd; border-radius: 30px; font-size:1.2em; color:#666; padding:10px 5%; box-sizing: border-box;position: relative;}
+#footerArea .family .icon{position: absolute; top:10px; right:5%; }
+#footerArea .family .aList{position:absolute; width:100%; background-color: white;bottom:54px; left:0; z-index: 10; border-radius: 20px;display: none;}
+#footerArea .family .aList li{padding:10px; }
+
+#footerArea .top_move{display: block; position:fixed; right:5%; bottom:10px; z-index:50;}
+#footerArea .top_move a{display: block; width:30px; height:30px;border-radius: 50% ; background-color:#005793;  position: relative;}
+#footerArea .top_move a i{position: absolute; top:25%; left:25%; color:white; font-size: 1.25em;}
+
+
+
+
+
+
+

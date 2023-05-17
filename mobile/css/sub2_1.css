@@ -1,0 +1,39 @@
+#headerArea .header{position: fixed; top:0; z-index:30; width:100%; overflow: hidden; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,.1);}
+#headerArea .header h1 a{display: block; width:80px;height:35px; margin: 10px 15px 5px 15px;background: url(../images/logo.png) center no-repeat;background-size:cover; text-indent: -1000px; overflow: 'hidden'; float: left;;}
+#headerArea .header .menu{display:block; font-size:24px; color:#333; padding:15px; float: right;}
+
+.main{background: url(../images/sub2visual.jpg) 40% no-repeat; height:220px; background-size: cover; position: relative;} 
+.main h3{font-size: 1.7em; font-weight: 500; color:#fff; position: absolute; left:50%; top:50%; margin-left: -44px; margin-top: 10px; }
+
+.subNav{position:relative; left:0; top:-20px; }
+.subNav ul{width:90%; margin: 0 auto; overflow: hidden; border-radius: 10px; box-shadow: 2px 1px 8px 0px rgba(0,0,0,.1);}
+.subNav ul li{width:33.3%; float: left; text-align: center; background: #fff;}
+.subNav ul li a{border: 1px solid #f8f8f8; display: block; padding:13px 0;}
+.subNav ul li a.current{color:#fff; background: #0c205b; font-weight: 500; border:1px solid #0c205b;}
+
+/* 회사소개 내용 영역 */
+.title_area h2{font-size:1.5em; font-weight: 600; margin:30px 0 20px 0  ;text-align: center;}
+.title_area p{font-size: 1.2em; font-weight: 500; text-align: center; margin-bottom: 30px;}
+.title_area p span{color: #005793; font-weight: 600;}
+
+.content_area{padding:20px 0;}
+.content_area h3{font-size:1.5em; font-weight:500; color:#005793; text-align: center;}
+.content_area .img_box{width: 80%; margin: 20px 10%;}
+.content_area .img_box img{width: 100%;}
+.content_area .text_box{line-height: 2em; text-align: justify; text-indent: 5px ;width:90%; margin:30px 5% 120px 5%; position: relative;}
+.content_area .openBtn{display: block; text-align: center; position: absolute; left:50%;margin-left:-75px  ;  bottom:-70px;
+    color: #333;padding: 10px 0;border-radius: 20px; width: 150px; box-shadow: 1px 1px 10px 0 rgb(0 0 0 / .2);}
+
+.pop_up{background: #fff; position:fixed; left:0; top:0;width:100%; height: 100%  ;display:none; z-index:120; }
+.pop_up p{font-size: 1.5em; font-weight: 500; color:#0c205b; text-align: center; margin-top: 50px;}
+.pop_up .closeBtn{display: block; text-align: center; position: absolute; left:50%;margin-left:-75px  ;  bottom:15%;
+    color: #333;font-size: 1em;padding: 10px 0;border-radius: 20px; width: 150px; box-shadow: 1px 1px 10px 0 rgb(0 0 0 / .2);}
+.pop_up .pop_btn .btn{color: #333;padding: 10px 0;border-radius: 50%; width: 40px; box-shadow: 1px 1px 10px 0 rgb(0 0 0 / .2);;position: absolute; bottom:15%;display: block; text-align: center;}
+.pop_up .pop_btn .prev{ left:5%;}
+.pop_up .pop_btn .next{ right:5%;}
+
+table { text-align:center; font-size:14px; border-collapse: collapse; width:90%; margin-left: 5%; height: 50%; margin-top: 12%; }
+td,th{border:1px solid #ccc; padding: 10px 0;}
+table thead tr:first-of-type{background-color: #dedede;}
+table thead tr:last-of-type{background-color: #ececec;}
+table tbody tr th{background-color: #ececec;}

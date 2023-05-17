@@ -1,0 +1,28 @@
+body{background: #f6f6f6;}
+
+header h1{text-align: center; padding:55px 0;}
+header h1 img{width:200px}
+
+
+.join_box{width:800px; padding:50px;border-radius: 10px; box-shadow: 1px 1px 10px 1px rgba(0,0,0,.1); background:white ;position: relative; left:50%; margin-left:-450px; margin-bottom:100px;}
+.join_box h2{font-size: 30px;  text-align: center;}
+.join_box p{text-align: center; color:#999; margin:10px 0 70px 0;}
+.join_box p span{color:red;}
+.join_box ul li{position: relative; margin-bottom: 20px;}
+
+.join_box label{display: block; font-weight: 600;}
+.join_box label::after{content: "*"; color:red;}
+.join_box input{width:760px; padding:20px; margin-top: 20px ;border-radius: 10px; border:1px solid #ccc; font-size: 16px;}
+
+.join_box ul li span{display: block; font-weight: 600;}
+.join_box ul li span::after{content: "*"; color:red;}
+.join_box .hp{width:213px; padding:20px; margin:20px 15px 0 15px  ; border-radius: 10px; border:1px solid #ccc; font-size: 16px;}
+.join_box #hp1{margin-left:0;}
+.join_box #hp3{margin-right: 0;}
+
+.join_box .join,.join_box .reset{display: inline-block;width: 200px;line-height: 24px;padding: 8px 0;border: none;background: #005793;color: #fff;font-size: 14px;cursor: pointer;
+    margin: 30px 5px; border-radius: 0;; }
+    .join_box .join{margin-left:200px;}
+
+
+

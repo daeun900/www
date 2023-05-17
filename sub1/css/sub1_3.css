@@ -1,0 +1,37 @@
+
+.content_area{width:2000px; position:relative; top:0; left:50%; margin-left: -1000px;}
+
+.history_nav{width:100%; height:80px; font-size:1.5em; font-weight: 500; margin:0 auto; margin-bottom:200px; position:relative}
+.navOn{    background: #fff;height: 20px; padding: 30px 0;position: fixed;width: 100%;transform: translateX(-50%);z-index: 60;left: 50%; top: 0;}
+.history_nav ul{width:2000px;float: left; position: relative;}
+.history_nav li{font-weight: 600; float:left; padding:10px 250px 0 0 ; position: relative;;}
+.history_nav li:first-child{padding-left:555px;}
+.history_nav::after{content: ''; width:100%; display: block; border-top:1px solid #ccc; position: absolute; top:0; left:0; z-index:1;}
+.history_nav li a{position: relative;}
+.history_nav li a::before{content: ''; display: block; width:20px; height:20px; border-radius: 50%; position:absolute; top:-20px; left:58px; z-index:5;background-color: #ccc;}
+.history_nav li a.current::before{background-color: #005793;}
+.history_nav li a.current{color:#005793;}
+
+.title{text-align: center; margin-bottom: 100px;}
+.title h3{font-size: 72px; font-weight: 700; color:white; -webkit-text-stroke: 2px #005793;}
+.title h3 span{color:#005793}
+.title p span{font-size: 36px;background: linear-gradient(to top, rgba(238,49,47,.1) 40%, transparent 40%) 0 -5px;}
+
+
+.history_area div:last-of-type{overflow: hidden; margin-bottom: 200px;}
+.history_area li{height:190px; margin-bottom:20px;}
+.history_area li  dl{ overflow: hidden; position:relative;}
+.history_area li dt{font-size:5em;font-weight: 500; color:#005793; float:right; position:absolute;left:0;}
+.history_area li dd{margin-left: 300px; padding:5px 0;}
+
+.img{transition: all .5s ease;}
+.img01, .img03{float: left; margin:50px 0 0 45px;}
+.history_list01 ul, .history_list03 ul{margin-left:1000px; padding-left:150px;}
+.history_list01 dt{top:20px;}
+
+.img02{float:right;margin:50px 0 0 0;}
+.history_list02 ul{margin-left:300px;}
+.history_list02 dl , .history_list03 dl{height:190px;}
+
+.sticky1{position:fixed; top:100px; left:-50px; }
+.sticky2{position:fixed; top:100px; right:-50px; }

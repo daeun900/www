@@ -1,0 +1,35 @@
+#headerArea .header{position: fixed; top:0; z-index:30; width:100%; overflow: hidden; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,.1);}
+#headerArea .header h1 a{display: block; width:80px;height:35px; margin: 10px 15px 5px 15px;background: url(../images/logo.png) center no-repeat;background-size:cover; text-indent: -1000px; overflow: 'hidden'; float: left;;}
+#headerArea .header .menu{display:block; font-size:24px; color:#333; padding:15px; float: right;}
+
+.main{background: url(../images/sub2visual.jpg) 40% no-repeat; height:220px; background-size: cover; position: relative;} 
+.main h3{font-size: 1.7em; font-weight: 500; color:#fff; position: absolute; left:50%; top:50%; margin-left: -44px; margin-top: 10px; }
+
+.subNav{position:relative; left:0; top:-20px; }
+.subNav ul{width:90%; margin: 0 auto; overflow: hidden; border-radius: 10px; box-shadow: 2px 1px 8px 0px rgba(0,0,0,.1);}
+.subNav ul li{width:33.3%; float: left; text-align: center; background: #fff;}
+.subNav ul li a{border: 1px solid #f8f8f8; display: block; padding:13px 0;}
+.subNav ul li a.current{color:#fff; background: #0c205b; font-weight: 500; border:1px solid #0c205b;}
+
+/* 회사소개 내용 영역 */
+.title_area h2{font-size:1.5em; font-weight: 600; margin:30px 0 20px 0  ;text-align: center;}
+.title_area p{font-size: 1.2em; font-weight: 500; text-align: center; margin-bottom: 30px;}
+.title_area p span{color: #005793; font-weight: 600;}
+
+.terminal_search{margin-top:50px;}
+.terminal_search h2{font-size:1.5em;font-weight: 600; text-align: center; color:#666}
+.terminal_search .search_box{position: relative; text-align: center; margin-top:30px;}
+.terminal_search .search_box input{width:80%; height:50px; outline:none; text-indent:20px; vertical-align: top; border:2px solid #005793; box-sizing: border-box;}
+.terminal_search .search_box #btn2{height:50px; width:50px; padding:10px; vertical-align: top; position: absolute; top:0; right:10%; background: #005793; color:white; border:none; cursor: pointer;}
+.terminal_search dl{overflow: hidden; color:#005793; width:80%; margin-left: 10%;}
+.terminal_search dl dt{float: left; padding:10px 20px 10px 0; font-size: 1em; font-weight: 500}
+.terminal_search dl dd a{float: left; padding:10px 5px; }
+
+.terminal_list ul{border:1px solid #005793; margin: 40px 5%; width: 90%; }
+.terminal_list ul li{overflow: hidden; transition: all .3s ease;}
+.terminal_list ul li:nth-child(odd){background-color:rgba(235, 243, 254, 0.5)}
+.terminal_list ul  li:nth-child(odd):hover{background-color:rgba(235, 243, 254, 1)}
+
+.terminal_list ul li dt{float:left; font-size:1em; font-weight: 500; color:#005793; width:100%; text-align: center; padding:20px 0; border-right: 1px solid #005793;}
+.terminal_list ul li dd{padding-bottom: 20px; text-align: center;}
+.terminal_list ul li dd b{font-weight: 500;}
